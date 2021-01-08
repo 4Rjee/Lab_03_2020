@@ -108,10 +108,10 @@ TEST(SharedPtr, Swap) {
   r.swap(r);
 }
 TEST(SharedPtr, IsMoveConstructible) {
-  EXPECT_TRUE (std :: is_move_constructible <SharedPtr < int >> ());
-  EXPECT_TRUE (std :: is_move_constructible <SharedPtr <std :: string >> ());
+  EXPECT_TRUE(std ::is_move_constructible<SharedPtr<int>>());
+  EXPECT_TRUE(std ::is_move_constructible<SharedPtr<std ::string>>());
 }
 TEST(SharedPtr, IsMoveAssignable) {
-  EXPECT_TRUE (std :: is_move_assignable <SharedPtr < int >> ());
-  EXPECT_TRUE (std :: is_move_assignable <SharedPtr <std :: string >> ());
+  EXPECT_TRUE(std ::is_move_assignable<SharedPtr<int>>());
+  EXPECT_TRUE(std ::is_move_assignable<SharedPtr<std ::string>>());
 }
